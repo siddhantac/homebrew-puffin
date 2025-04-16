@@ -5,22 +5,22 @@
 class Puffin < Formula
   desc "A beautiful and simple terminal dashboard for hledger"
   homepage "https://github.com/siddhantac/puffin/"
-  version "2.1.3"
+  version "2.1.5"
 
   depends_on "hledger"
 
   on_macos do
     on_intel do
-      url "https://github.com/siddhantac/puffin/releases/download/v2.1.3/puffin_Darwin_x86_64.tar.gz"
-      sha256 "b158223ec311ec5c16ec2dd83963f55dec59d97a53e34abea10509bd7a8b8f3a"
+      url "https://github.com/siddhantac/puffin/releases/download/v2.1.5/puffin_2.1.5_Darwin_x86_64.tar.gz"
+      sha256 "b09e5884764ed8709d62532ce9f134fc71175241897aead224a31a2fb220f5b5"
 
       def install
         bin.install "puffin"
       end
     end
     on_arm do
-      url "https://github.com/siddhantac/puffin/releases/download/v2.1.3/puffin_Darwin_arm64.tar.gz"
-      sha256 "6e91907f7aa88128c4b1c8c4e6262fa58c28ae273bd7e026654b760edded0218"
+      url "https://github.com/siddhantac/puffin/releases/download/v2.1.5/puffin_2.1.5_Darwin_arm64.tar.gz"
+      sha256 "9869eb1390594d368b7b4fe65dc5cf7f0dc42022301903e9f0aec43b6a4d56c4"
 
       def install
         bin.install "puffin"
@@ -31,8 +31,8 @@ class Puffin < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/siddhantac/puffin/releases/download/v2.1.3/puffin_Linux_x86_64.tar.gz"
-        sha256 "27b4d333f3a88d2ce21e26cf368a9d3f11e451f93d4c4fe261b215087778a271"
+        url "https://github.com/siddhantac/puffin/releases/download/v2.1.5/puffin_2.1.5_Linux_x86_64.tar.gz"
+        sha256 "3c84692d9fc360004f4cc969eee0c4c8a8d9c8e035e271d9a2b150fa30e9b9c8"
 
         def install
           bin.install "puffin"
@@ -41,8 +41,8 @@ class Puffin < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/siddhantac/puffin/releases/download/v2.1.3/puffin_Linux_arm64.tar.gz"
-        sha256 "21558c3f4ccd9c1a6ab4eae9497da62bc906fdeae1ecf0951d2f2dc4fdd1a268"
+        url "https://github.com/siddhantac/puffin/releases/download/v2.1.5/puffin_2.1.5_Linux_arm64.tar.gz"
+        sha256 "a77b5ee0684cffbc053126e17ee7e06846bd394931a42d3d5e1ce228db1e8d38"
 
         def install
           bin.install "puffin"
